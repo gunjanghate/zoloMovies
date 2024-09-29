@@ -1,27 +1,44 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 :root {
-  --background: #ffffff;
+  --background: #dab3b3;
   --foreground: #171717;
 }
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+body{
+  background-color:rgb(60, 1, 1);
+  color: rgb(251, 255, 13);
+  /* text-shadow: .5px 1px rgb(63, 42, 42); */
+  /* font-family: "Merriweather", serif; */
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+.merriweather-regular {
+  font-family: "Merriweather", serif;
+  font-weight: 400;
+  font-style: normal;
 }
-
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+.add-form{
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+}
+.movie-item{
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+}
+.header{
+  backdrop-filter: blur(10px);
+  background-color: transparent;
+}
+.add-page {
+  background: url("https://media.istockphoto.com/id/1494642262/photo/people-in-the-cinema-auditorium-with-empty-white-screen.jpg?s=612x612&w=0&k=20&c=wiVYHafqEAlvufaCpOTZhn9wuklrgKHdDHWqpmMGhjw=") no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.movies-main{
+  background: url("https://images.pexels.com/photos/109669/pexels-photo-109669.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") no-repeat;
+  background-position: center;
+  background-size: cover;
 }
