@@ -3,7 +3,7 @@ import { NextResponse } from 'next/server';
 import { ObjectId } from 'mongodb';
 
 // Connection URI
-const uri = "mongodb+srv://ghategunjan:gg1234@cluster0.uz6sd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+const uri = "mongodb+srv://ghategunjan:gg1234@cluster0.uz6sd.mongodb.net/";
 
 // Global client and promise to maintain the connection pool
 let cachedClient = null;

@@ -47,7 +47,7 @@ const Page = () => {
 
   const filteredStockData = stockData
     .filter((stock) =>
-      stock.name.toLowerCase().includes(searchQuery.toLowerCase())
+      stock.name && stock.name.toLowerCase().includes(searchQuery.toLowerCase())
     )
     .filter((stock) => selectedGenre === "All" || stock.genre === selectedGenre);
 
